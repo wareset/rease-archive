@@ -1,0 +1,51 @@
+{
+  "name": "rollup-plugin-rease",
+  "version": "0.2.0",
+  "description": "wip: rease-compiler for Rollup",
+  "keywords": [
+    "rollup",
+    "plugin",
+    "rease"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/wareset/rollup-plugin-rease#readme",
+  "bugs": {
+    "url": "https://github.com/wareset/rollup-plugin-rease/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wareset/rollup-plugin-rease.git"
+  },
+  "author": "rease <cftcview@gmail.com>",
+  "main": "index",
+  "module": "index.mjs",
+  "types": "types/index.d.ts",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.d.ts",
+    "index.js",
+    "index.mjs",
+    "types/**/*"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "types": "./types/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "dester",
+    "dev": "dester -m"
+  },
+  "devDependencies": {
+    "dester": "1.0.x",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@rollup/pluginutils": "^5.0.2",
+    "rastree": "0.2.x"
+  }
+}

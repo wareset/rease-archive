@@ -1,0 +1,13 @@
+{
+  "files": [
+    "createTemplateTree",
+    "fixCircleBrackets",
+    "normalizeAttribute",
+    "normalizeTokens",
+    "parseAttributes",
+    "source2Tokens",
+    "stringifyTokens",
+    "trimTokens",
+    "utils"
+  ]
+}

@@ -1,0 +1,14 @@
+export * from 'jsx2tokens';
+import { TOKEN_TYPES as TYPES } from 'jsx2tokens';
+import { TypeToken, TypeTokenType } from 'jsx2tokens';
+export { TYPES };
+export declare function createFakeToken(value: string, deep: number, type?: TypeTokenType, rangeAndLoc?: boolean): TypeToken;
+export declare function nextRealTokenIndex(tokens: TypeToken[], currentIndex: number): number;
+export declare function prevRealTokenIndex(tokens: TypeToken[], currentIndex: number): number;
+export declare function removeExtraSpaces(tokens: TypeToken[]): TypeToken[];
+export declare function stringifyTokens(tokens: TypeToken[]): string;
+export declare function trimLeftTokens(tokens: TypeToken[]): TypeToken[];
+export declare function trimRightTokens(tokens: TypeToken[]): TypeToken[];
+export declare function trimTokens(tokens: TypeToken[]): TypeToken[];
+export declare function trimCircleBrackets(tokens: TypeToken[]): TypeToken[];
+export declare function trimCurlyBrackets(tokens: TypeToken[]): TypeToken[];

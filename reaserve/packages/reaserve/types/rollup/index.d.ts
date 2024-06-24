@@ -1,0 +1,20 @@
+import { RollupOptions, Plugin } from 'rollup';
+export declare type TypeRollupOptionsWithoutInputAndOutput = Omit<RollupOptions, 'input' | 'output'>;
+declare const _default: ({ dirSrc, dirTemp, dirOutput, dirSrcAssets, dirSrcRoutes, fileSrcClient, fileSrcServer, fileSrcTemplate, rollupClientPluginsBefore, rollupClientOptions, rollupServerPluginsBefore, rollupServerOptions, debug, devmode, watchStatic }?: {
+    dirSrc?: string;
+    dirTemp?: string;
+    dirOutput?: string;
+    dirSrcAssets?: string;
+    dirSrcRoutes?: string;
+    fileSrcClient?: string;
+    fileSrcServer?: string;
+    fileSrcTemplate?: string;
+    rollupClientPluginsBefore?: Plugin[];
+    rollupClientOptions?: TypeRollupOptionsWithoutInputAndOutput;
+    rollupServerPluginsBefore?: Plugin[];
+    rollupServerOptions?: TypeRollupOptionsWithoutInputAndOutput;
+    debug?: boolean;
+    devmode?: boolean;
+    watchStatic?: boolean;
+}) => [RollupOptions, RollupOptions];
+export default _default;

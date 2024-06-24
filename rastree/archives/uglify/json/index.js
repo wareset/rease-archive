@@ -1,0 +1,1 @@
+'use strict';Object.defineProperty(exports,'__esModule',{value:!0});var e=require('@wareset-utilites/lang');Object.defineProperty(exports,'parse',{enumerable:!0,get:function(){return e.jsonParse}}),Object.defineProperty(exports,'stringify',{enumerable:!0,get:function(){return e.jsonStringify}});

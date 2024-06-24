@@ -1,0 +1,8 @@
+{
+  "files": [
+    "clone",
+    "getDelimeter",
+    "removeComments",
+    "replaceQuotes"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "rease-bootstrap",
+  "version": "0.2.0",
+  "description": "wip",
+  "keywords": [
+    "rease",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/wareset/rease-bootstrap",
+  "bugs": {
+    "url": "https://github.com/wareset/rease-bootstrap/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wareset/rease-bootstrap.git"
+  },
+  "author": "rease <cftcview@gmail.com>",
+  "main": "index",
+  "module": "index.mjs",
+  "types": "index.d.ts",
+  "files": [
+    "README.md",
+    "classnames",
+    "components"
+  ],
+  "peerDependencies": {
+    "rease": "0.2.x"
+  },
+  "dependencies": {
+    "utility-types": "3.10.0"
+  }
+}

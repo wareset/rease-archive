@@ -1,0 +1,88 @@
+{
+  "name": "rastree",
+  "version": "0.3.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "wip: ReaseASTree - compiler for rease",
+  "license": "MIT",
+  "author": "rease <cftcview@gmail.com>",
+  "main": "index",
+  "module": "index.mjs",
+  "types": "types/index.d.ts",
+  "files": [
+    "README.md",
+    "_includes/**/*",
+    "compiler/**/*",
+    "css/**/*",
+    "index.d.ts",
+    "index.js",
+    "index.mjs",
+    "jsx/**/*",
+    "jsx2tokens/**/*",
+    "storefy/**/*",
+    "styles/**/*",
+    "types/**/*",
+    "utilites/**/*"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "types": "./types/index.d.ts"
+    },
+    "./compiler": {
+      "import": "./compiler/index.mjs",
+      "require": "./compiler/index.js",
+      "types": "./types/compiler/index.d.ts"
+    },
+    "./css": {
+      "import": "./css/index.mjs",
+      "require": "./css/index.js",
+      "types": "./types/css/index.d.ts"
+    },
+    "./jsx": {
+      "import": "./jsx/index.mjs",
+      "require": "./jsx/index.js",
+      "types": "./types/jsx/index.d.ts"
+    },
+    "./jsx2tokens": {
+      "import": "./jsx2tokens/index.mjs",
+      "require": "./jsx2tokens/index.js",
+      "types": "./types/jsx2tokens/index.d.ts"
+    },
+    "./storefy": {
+      "import": "./storefy/index.mjs",
+      "require": "./storefy/index.js",
+      "types": "./types/storefy/index.d.ts"
+    },
+    "./styles": {
+      "import": "./styles/index.mjs",
+      "require": "./styles/index.js",
+      "types": "./types/styles/index.d.ts"
+    },
+    "./utilites": {
+      "import": "./utilites/index.mjs",
+      "require": "./utilites/index.js",
+      "types": "./types/utilites/index.d.ts"
+    },
+    "./utilites/hash": {
+      "import": "./utilites/hash/index.mjs",
+      "require": "./utilites/hash/index.js",
+      "types": "./types/utilites/hash.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "dester --ie -m",
+    "dev": "dester --ie -wm"
+  },
+  "devDependencies": {
+    "dester": "1.0.x",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "enum-chars": "1.2.x",
+    "jsx2tokens": "^0.2.9"
+  }
+}

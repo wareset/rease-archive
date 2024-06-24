@@ -1,0 +1,1 @@
+import{prototype as o}from'../object';const t=o.constructor,r=o.hasOwnProperty,e=o.isPrototypeOf,n=o.propertyIsEnumerable,p=o.toLocaleString,c=o.toString,s=o.valueOf;export{t as constructor,r as hasOwnProperty,e as isPrototypeOf,n as propertyIsEnumerable,p as toLocaleString,c as toString,s as valueOf};

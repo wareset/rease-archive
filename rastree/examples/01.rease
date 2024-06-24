@@ -1,0 +1,48 @@
+<script lang="ts" module client env="client" context="module">
+  import { storeModule, storeCounterModule } from 'rease/store'
+
+  export const $size = storeModule(10)
+</script>
+
+<script lang="ts" client>
+  import component, { props } from 'rease/component'
+
+  const { store, storeSubscribe } = component
+
+  const $test = store(75)
+
+</script>
+
+<options :name="App" :access="private" :cid="s2s12w" :scoper=".cid" />
+
+<mixin :name="item" index="{15}">
+  <span class="item index-{index}">
+    Index: {$test.$} <slot>default slot value</slot>
+  </span>
+</mixin>
+
+<template>
+  <div class="nodes-container" --private style="color:red">
+    <for rule="{{ from:0, to:10, step:2 }}" :args="(index, key)">
+      <item '{index}'>{index}</item>
+    </for>
+
+    <if rule="{2 > 1}">
+      <node :type="{1 > 2 ? 'for' : 'for-of'}" --public>
+      </node>
+    </if>
+  </div>
+
+  <h6 on:click(qq) '{on:click:2(zz)}' "class"="sdsf {dfdfdg}"></h6>
+</template>
+
+<style scoped --js="var" --calc="all">
+  .item {
+    width: var('$size + 12') 1px;
+    height: 10px var('20')px
+  }
+
+  :global(.item) :var('$size + 12') {
+    color: red;
+  }
+</style>

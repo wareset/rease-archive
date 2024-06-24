@@ -1,0 +1,20 @@
+{
+  "name": "reaserve-monorepo",
+  "private": true,
+  "license": "MIT",
+  "description": "This is the monorepo for reaserve",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "@types/node": "^12.20.0",
+    "dester": "1.0.x",
+    "jest": "^29.3.1",
+    "lerna": "6.6.2",
+    "ts-jest": "^28.0.7",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.1",
+    "typescript": "^5.2.2"
+  }
+}

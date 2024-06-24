@@ -1,0 +1,14 @@
+{
+  "name": "rastree-monorepo",
+  "private": true,
+  "author": "rease <cftcview@gmail.com>",
+  "license": "MIT",
+  "description": "WIP: monorepo for rastree",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "6.6.2",
+    "typescript": "^5.2.2"
+  }
+}

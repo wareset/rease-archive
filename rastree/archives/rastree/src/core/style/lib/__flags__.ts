@@ -1,0 +1,7 @@
+export const enum FLAGS {
+  COMMENT,
+  ATRULE,
+  SELECTOR,
+  KEYFRAME,
+  ATTRIBUTE
+}

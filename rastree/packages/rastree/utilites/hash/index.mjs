@@ -1,0 +1,2 @@
+/* eslint-disable */
+import{v as r}from"../../_includes/dester-inject-Math.mjs";var e=r.random;function t(r,t,a){var n=.9973;if(null==r)n=e()||n;else{(t=+t||0)<0&&(t=-t),t>0&&(t=n/t);for(var o,i=1/n,l=(r+="").length,f=a&&l/99>>>1||1,c=0;c<l;c+=f)13===(o=r.charCodeAt(c))?c-=f-1:(n+=(o*n*997.3+t)/(o+n)+i)>0&&(n-=0|n)}var h=n.toString(36).replace(/0?\./,"");r:if(!h||+h[0]>-1){for(var s=h.length;s-- >0;)if(!(+h[s]>-1)){h=h[s]+h;break r}h="h"+h}for(;h.length<10;)h+=h;return h.slice(0,10)}export{t as hash};
